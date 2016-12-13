@@ -224,12 +224,19 @@
 			</li>
 			</ul>
 </div>
- 
 
-<script src="js/config.js"></script>
 <script src="js/jquery-1.9.1.min.js"></script>
+ <script src="cordova.js"></script>
+ <script src="kendo/js/kendo.mobile.min.js"></script>
+ 
+<script src="scripts/demo.js"></script>
+<script src="scripts/app.js"></script>
+
 <script src="js/kendo.all.min.js"></script>
-<script src="js/db.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/main.js"></script>
+<script src="js/db.js"></script>
 <script src="js/advt.js"></script>
 <script>
 	//var user_data  =$.parseJSON($.cookie("UserData")); 
@@ -258,8 +265,9 @@ app = new kendo.mobile.Application($(document.body), { transition: "slide" });
  
 });		
  setTimeout(function(){ 
-	$("#scanner").attr("data-role", "views");
-	$("#scanner").attr("class", "km-widget x-view");
+	 
+	 $("#scanner").attr("data-role", "views");
+	 $("#scanner").attr("class", "km-widget x-view");
 	$('#scanner').show();
 	$('#class').show();
 
